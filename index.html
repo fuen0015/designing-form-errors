@@ -2,7 +2,11 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Designing form errors</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/modules.css">
+  <link rel="stylesheet" href="css/type.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <form class="max-length island" action="#" method="post" novalidate>
@@ -36,19 +40,18 @@
 
     <div class="push-1-2 pad-t-1-2">
       <input type="checkbox" id="agree" required aria-describedby="agree-error">
-      <label for="agree">I'm totally awesome!</label>
+      <label for="agree">I‘m totally awesome!</label>
       <p class="error-message milli island-1-4 push-0" id="agree-error"></p>
       <i class="icon 1-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
-      <span class="icon-label"> Please agree that you're totally awesome</span>
+      <span class="icon-label">Please agree that you‘re totally awesome</span>
     </div>
 
     <div class="pad-t-1-2">
-      <button class="btn" type="submit">Send</button>
+      <button class="btn btn-ghost" type="submit">Send</button>
     </div>
   </form>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js">
-
   </script>
 </body>
 </html>
